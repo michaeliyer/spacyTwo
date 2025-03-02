@@ -1,4 +1,5 @@
 document.getElementById('activateSky').addEventListener('click', () => {
+    console.log("You're in Space, Ace!!!")
     document.getElementById('nightSky').style.opacity = '1';
     document.getElementById('nightSky').style.pointerEvents = 'auto';
     generateStars(2500);
@@ -32,18 +33,7 @@ function generateStars(count) {
         sky.appendChild(star);
     }
 }
-// function generateStars(count) {
-//     const sky = document.getElementById('nightSky');
-//     for (let i = 0; i < count; i++) {
-//         let star = document.createElement('div');
-//         star.classList.add('star');
-//         star.style.left = Math.random() * 100 + 'vw';
-//         star.style.top = Math.random() * 100 + 'vh';
-//         star.style.animationDuration = (Math.random() * 5 + 3) + 's';
-//         sky.appendChild(star);
-//         setTimeout(() => { star.style.opacity = '1'; }, 100);
-//     }
-// }
+
 
 // 🪐 Generate Planets
 function generatePlanets(count) {
@@ -61,7 +51,7 @@ function generatePlanets(count) {
         let depth = depthLevels[Math.floor(Math.random() * depthLevels.length)];
         planet.setAttribute("data-depth", depth);
 
-        let size = depth === "far" ? 20 : depth === "mid" ? 40 : 60;
+        let size = depth === "far" ? 10 : depth === "mid" ? 13 : 17;
         planet.style.width = size + "px";
         planet.style.height = size + "px";
         planet.style.left = Math.random() * 80 + 10 + "vw";
@@ -84,6 +74,7 @@ function generateShootingStar() {
 
 // 📜 Show Planet Message
 function showMessage(text) {
+    console.log("FUCK THOU, CHIP!")
     let msgBox = document.getElementById('messageBox');
     msgBox.textContent = text;
     msgBox.style.display = 'block';
