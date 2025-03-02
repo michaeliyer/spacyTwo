@@ -2,7 +2,7 @@ document.getElementById('activateSky').addEventListener('click', () => {
     console.log("You're in Space, Ace!!!")
     document.getElementById('nightSky').style.opacity = '1';
     document.getElementById('nightSky').style.pointerEvents = 'auto';
-    generateStars(2500);
+    generateStars(1500);
     generatePlanets(6);
     setInterval(generateShootingStar, 10000);
 });
