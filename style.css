@@ -172,10 +172,7 @@ body {
     transition: all 2s ease-in-out;
 }
 
-#moon2 {
-    width: 20px;
-    height: 20px;
-}
+
 
 /* New Moon (Fully Invisible) */
 #moon[data-phase="new"] { 
