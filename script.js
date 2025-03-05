@@ -137,7 +137,7 @@ document.getElementById("moon").addEventListener("click", () => {
 });
 
 
-document.getElementById("moon").addEventListener("click", () => {
+document.getElementById("activateSky").addEventListener("click", () => {
     playBlueDanube();
 });
 
