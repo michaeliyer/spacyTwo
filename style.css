@@ -87,8 +87,8 @@ body {
   }
   
   .planet[data-type="gas"] {
-    background: radial-gradient(circle, #ff9c00, #ff4500);
-    box-shadow: 0 0 20px rgba(255, 153, 51, 0.9);
+    background: radial-gradient(circle, #f5d095, #e0967b);
+    box-shadow: 0 0 20px rgba(200, 179, 159, 0.7);
   }
   
   .planet[data-type="ice"] {
@@ -98,13 +98,13 @@ body {
   
   /* Distant Planets - Smaller & Dimmer */
   .planet[data-depth="far"] {
-    transform: scale(0.5);
+    transform: scale(0.8);
     opacity: 0.6;
     filter: blur(1px);
   }
   
   .planet[data-depth="mid"] {
-    transform: scale(0.8);
+    transform: scale(0.5);
   }
   
   .planet[data-depth="close"] {

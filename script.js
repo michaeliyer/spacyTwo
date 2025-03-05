@@ -135,3 +135,18 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("moon").addEventListener("click", () => {
     alert(`Today's Moon Phase: ${getMoonPhase().replace("-", " ")}`);
 });
+
+
+document.getElementById("moon").addEventListener("click", () => {
+    playBlueDanube();
+});
+
+function playBlueDanube() {
+    console.log("Playing Blue Danube..."); // Debugging
+    const audio = document.getElementById("myDanube");
+    if (audio) {
+        audio.play().catch(err => console.error("Error playing audio:", err));
+    } else {
+        console.error("Audio element not found");
+    }
+}
