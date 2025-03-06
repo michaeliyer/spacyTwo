@@ -42,6 +42,7 @@ body {
     pointer-events: none;
   }
 
+
   #nightSky2 {
     position: relative;
     margin: 20rem;
@@ -216,5 +217,5 @@ body {
     100% { top: 30%; left: 95%; }
 }
 #moon.moving {
-    animation: moveMoon 300s linear infinite;
+    animation: moveMoon 600s linear infinite;
 }
